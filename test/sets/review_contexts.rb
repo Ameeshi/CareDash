@@ -18,6 +18,20 @@ module Contexts
 		end 
 
 		def delete_reviews
+			@john1.delete
+			@john2.delete
+			@jane1.delete
+			@jane2.delete
+			@levi1.delete
+			@levi2.delete
+			@ameeshi2.delete
+			@ameeshi1.delete
+			@dina1.delete
+			@dina2.delete
+			@smith1.delete
+			@smith2.delete
+			@john3.delete
+			@john4.delete
 		end 
 	end 
 end 
