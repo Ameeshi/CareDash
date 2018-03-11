@@ -13,7 +13,7 @@ module Contexts
 			@levi2 = FactoryBot.create(:review, doctor: @levi, description: "He is awesome!")
 			@smith1 = FactoryBot.create(:review, doctor: @smith, description: "He is a wonderful doctor")
 			@smith2 = FactoryBot.create(:review, doctor: @smith, description: "Very hardworking and nice.")
-			@john3 = FactoryBot.create(:review, doctor: @john, description: "He was awful wih me")
+			@john3 = FactoryBot.create(:review, doctor: @john, description: "He was awful with me")
 			@john4 = FactoryBot.create(:review, doctor: @john, description: "He is the best in the business")
 		end 
 
