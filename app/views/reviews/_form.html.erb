@@ -19,7 +19,7 @@
 
   <div class="field">
     <%= form.label :doctor_id %>
-    <%= form.collection_select :doctor_id, Doctor.alphabetical, :id, :name, :prompt => "Select ..." %>
+    <%= form.collection_select(:doctor_id, Doctor.alphabetical, :id, :name, :prompt => "Select ...") %>
   </div>
   </br>
 

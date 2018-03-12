@@ -11,13 +11,13 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
 //= require turbolinks
 
 //= require materialize-sprockets
 //= require materialize-form
 
 //= require_tree .
-//= require jquery
 
 $( document ).ready(function () {
     $(".dropdown-button").dropdown();
