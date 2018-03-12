@@ -1,10 +1,10 @@
 <div class="row">    
-  <div class="col s9">
+  <div class="col s12">
     <div class="card">
       <div class="card-content">
   
-        <span class="card-title"><em>Contacting PATS</em></span>
-        <p> Hello
+        <span class="card-title"><b>Contact Us</b></span>
+        <p> Contact CareDash with questions, concerns, or feedback. We'd love to hear from you!
         </p>
         <p>&nbsp;</p>
       </div>
@@ -15,13 +15,15 @@
         <span class="card-title">Contact</span>
         <table cellpadding="3">
           <tr>
-            <td>Webmaster:&nbsp;&nbsp;&nbsp;</td>
-            <td>Ameeshi Goel</td>
+            <td>For media inquiries </td>
+            <td>
+            <%= mail_to("PR@caredash.com", "PR@caredash.com", encode: "javascript") %> 
+            </td>
           </tr>
           <tr>
-            <td>Email:</td>
+            <td>For general questions </td>
             <td>
-            <%= mail_to("ameeshig@andrew.cmu.edu", "Ameeshi", encode: "javascript") %> 
+            <%= mail_to("ameeshig@andrew.cmu.edu", "ameeshig@andrew.cmu.edu", encode: "javascript") %> 
             </td>
           </tr>
           <tr>
@@ -29,7 +31,6 @@
             <td>412-425-3888</td>
           </tr>
         </table>
-        <p >Bye</p>
       </div>
     </div>
   </div>

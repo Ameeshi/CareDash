@@ -12,4 +12,14 @@
 //
 //= require rails-ujs
 //= require turbolinks
+
+//= require materialize-sprockets
+//= require materialize-form
+
 //= require_tree .
+
+
+$( document ).ready(function () {
+    $(".dropdown-button").dropdown();
+    $('select').material_select();
+});

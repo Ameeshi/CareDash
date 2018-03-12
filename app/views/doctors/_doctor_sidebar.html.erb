@@ -1,0 +1,29 @@
+<% unless @reviews.empty? %>
+  <div class="card white lighten-4">
+    <div class="card-content">
+      <span class="card-title"> Doctor reviews </span>
+      <ul>
+        <% for review in @reviews %>
+          <li>
+            <%= link_to(review_path(review), method: :delete, class: 'remove') do %>
+                x&nbsp;&nbsp;
+              <% end %>
+            <%= link_to review.description, review_path(review) %>&nbsp;&nbsp;
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="card black lighten-3">
+	    <div class="card-action">
+	      <%= link_to "Add a new review", new_review_path(doctor_id: @doctor.id) %>
+	    </div>
+	</div>
+  </div>
+<% else %>
+  <div class="card grey lighten-3">
+    <div class="card-action">
+      <h5> No reviews at this time. </h5>
+      <%= link_to "Add a new review", new_review_path(doctor_id: @doctor.id) %>
+    </div>
+  </div>
+<% end %>

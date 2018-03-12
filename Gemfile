@@ -37,6 +37,7 @@ gem 'will_paginate'
 gem 'simple_form'
 gem 'materialize-sass'
 gem 'turbolinks'
+gem 'materialize-form', '1.0.8'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
