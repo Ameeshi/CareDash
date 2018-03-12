@@ -11,17 +11,20 @@
     </div>
   <% end %>
 
-  <div class="input-field">
+  <div class="field">
     <%= form.label :description %>
     <%= form.text_field :description, id: :review_description %>
   </div>
+  </br>
 
-  <div class="input-field">
+  <div class="field">
     <%= form.label :doctor_id %>
     <%= form.collection_select :doctor_id, Doctor.alphabetical, :id, :name, :prompt => "Select ..." %>
   </div>
+  </br>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+</br>

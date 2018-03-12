@@ -10,6 +10,5 @@
   <%= link_to @review.doctor.name, doctor_path(@review.doctor) %>
 </p>
 
-<%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %> |
-<%= link_to 'Destroy', @review, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Edit', edit_review_path(@review), :class=> "waves-effect waves-light btn lime"%> |
+<%= link_to 'Destroy', @review, method: :delete, :class=> "waves-effect waves-light btn lime", data: { confirm: 'Are you sure?' } %>

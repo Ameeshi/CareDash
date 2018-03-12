@@ -17,9 +17,9 @@
 //= require materialize-form
 
 //= require_tree .
-
+//= require jquery
 
 $( document ).ready(function () {
     $(".dropdown-button").dropdown();
     $('select').material_select();
-});
+})

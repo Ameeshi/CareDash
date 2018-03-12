@@ -1,8 +1,39 @@
-<nav id="nav" class= "cyan darken-1">
+<!-- <nav id="nav" class= "cyan darken-1">
   <div class="container ">
-    <ul class="left hide-on-med-and-down">
-      <li><%= link_to 'Doctors', doctors_path %></li>
-      <li><%= link_to 'Reviews', reviews_path %></li>
+    <ul class="left">
+      	<li><%= link_to 'Doctors', doctors_path %></li>
+      	<li><%= link_to 'Reviews', reviews_path %></li>
     </ul>
+    <ul class="right">
+    	<li><%= link_to 'Login'%></li>
+    </ul>
+  </div>
+</nav> -->
+
+
+ <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><%= link_to "List Doctors", doctors_path %></li>
+  <li><%= link_to "Add a Doctor", new_doctor_path %></li>
+</ul>
+
+<ul id="dropdown2" class="dropdown-content">
+  <li><%= link_to "List Reviews", reviews_path %></li>
+  <li><%= link_to "Add a Review", new_review_path %></li>
+</ul>
+
+<nav id="nav" class= "cyan darken-1">
+  <div class="nav-wrapper" class = "cyan darken-1">
+    &nbsp&nbsp
+
+    <ul class="right">
+      <li><%# link_to "Categories", categories_path %></li> <!-- Only add this line if you did the work for the categories controller -->
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="/doctors" data-activates="dropdown1">Doctors<i class="material-icons right">arrow_drop_down</i></a></li>
+
+     <li><a class="dropdown-button" href="/reviews" data-activates="dropdown2">Reviews<i class="material-icons right">arrow_drop_down</i></a></li>
+
+    </ul>
+
   </div>
 </nav>
